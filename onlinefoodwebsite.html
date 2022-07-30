@@ -1,0 +1,641 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color:rgb(2, 2, 2)
+        }
+        .t{
+            float:right;
+            margin: 10px; 
+            margin-right: 40px;
+        }
+        .q{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: bold;
+            float:left;
+            margin: 150px;
+            align-self: center;
+        }
+         
+        nav{
+            background-color:rgb(2, 2, 2);
+            color: red;
+            border-color: solid red;
+            border-radius: 2px;
+            font-size: 20px;
+            position: sticky;
+            top: 0px;
+        }
+        h1{
+            text-align: center;
+            color: red;
+            text-decoration:underline ;
+        }
+        .e,.f{
+            text-align: center;
+            color: rgb(253, 253, 253);
+        }
+        .s1 {
+        display: flex;
+        flex-direction: row;
+        border: 2px black solid;
+        border-radius: 5px;
+        margin: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: rgba(255, 255, 255, 0.331);
+        padding: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        align-content: center;
+      }
+        .x{
+            font-size: medium;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .f{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            border-radius: 10px;
+            border-color: red;
+            border: 10px;
+        }
+        .G{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: auto auto auto auto auto ;
+            background-image: url("https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE4MjY3M30") ;
+            background-size: cover;
+            padding: 10px;
+        }
+
+        .g{
+            background-color: solid black;
+            border: 3px solid rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        a:link {
+            color:rgb(236, 111, 111);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(240, 9, 9);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(243, 73, 73);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        .m{
+            text-align: center;
+            margin: 20px;
+        }
+        .n{
+            font-size: 30px;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+            border-color: red;
+        }
+        .x{
+            text-align: center;
+            
+        }
+        .y{
+            font-size: 30px;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+            border-color: red;
+        }
+        .z{
+            background-color: rgb(150, 147, 147);
+            border-radius: 10px;
+        }
+
+      .aa {
+        display: flex;
+        border: 5px black solid;
+        background-color: rgb(0, 0, 0);
+      }
+      .ac {
+        font-family: moon dance;
+        font-size: 50px;
+        font-weight: bolder;
+        color: red;
+        text-align: right;
+        padding: 15px;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(255, 0, 0);
+        color: black;
+        position: sticky;
+        top: 60px;
+      }
+      .center {
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      a {
+        display: block;
+        text-align: right;
+        font-size: xx-large;
+        margin-right: 20px;
+      }
+      .a {
+        display: flex;
+        border: 5px black solid;
+        background-color: rgb(22, 21, 21);
+      }
+      .c {
+        font-family: moon dance;
+        font-size: 50px;
+        font-weight: bolder;
+        color: red;
+        text-align: right;
+        padding: 15px;
+      }
+      .i {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 90%;
+      }
+      
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5 {
+        outline: 2px black solid;
+        border-radius: 20px;
+        background-color: rgba(245, 245, 245, 0.808);
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        width: 95%;
+      }
+      .box1 img {
+        outline: 2px black solid;
+        border-radius: 20px;
+        width: 400px;
+        height: 200px;
+        float: left;
+      }
+      .text1 {
+        width: 850px;
+        float: right;
+        height: 50px;
+        padding: 10px;
+      }
+      .box2 img {
+        outline: 2px black solid;
+        border-radius: 20px;
+        width: 400px;
+        height: 200px;
+        float: right;
+      }
+      .text2 {
+        width: 850px;
+        float: left;
+        height: 50px;
+        padding: 10px;
+      }
+      .box3 img {
+        outline: 2px black solid;
+        border-radius: 20px;
+        width: 400px;
+        height: 200px;
+        float: left;
+      }
+      .text3 {
+        width: 850px;
+        float: right;
+        height: 50px;
+        padding: 10px;
+      }
+      .box4 img {
+        outline: 2px black solid;
+        border-radius: 20px;
+        width: 400px;
+        height: 200px;
+        float: right;
+      }
+      .text4 {
+        width: 850px;
+        float: left;
+        padding: 10px;
+      }
+      .box5 img {
+        outline: 2px black solid;
+        border-radius: 20px;
+        width: 400px;
+        height: 200px;
+        float: left;
+      }
+      .text5 {
+        width: 850px;
+        float: right;
+        height: 50px;
+        padding: 10px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .s {
+        border: 2px black solid;
+        border-radius: 5px;
+        margin: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: rgba(255, 255, 255, 0.808);
+        padding: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+      }
+      button {
+        background-color: #04aa49;
+        color: white;
+        padding: 12px 20px;
+        margin-left: 350px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
+      button:hover {
+        background-color: #146b19;
+      }
+      .s1 {
+        display: flex;
+        flex-direction: row;
+        border: 2px black solid;
+        border-radius: 5px;
+        margin: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: rgba(255, 255, 255, 0.808);
+        padding: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+      }
+      .s2 {
+        border: 2px black solid;
+        border-radius: 5px;
+        margin: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: rgba(255, 255, 255, 0.808);
+        padding: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+      }
+      .f {
+        background-color: rgba(245, 245, 245, 0.863);
+      }
+      
+      .d {
+        border-radius: 100%;
+        width: 300px;
+      }
+      .l {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+      }
+      .it {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      p {
+        text-align: justify;
+        padding: 20px;
+      }
+      .w {
+        padding: 40px;
+      }
+      .branch {
+        background-color: rgba(0, 0, 0, 0.849);
+        border-radius: 5px;
+        margin: 30px;
+        color: whitesmoke;
+        padding: 10px;
+      }
+      .but{
+        background-color: #04aa49;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://i.pinimg.com/736x/38/49/c7/3849c7b63abaa8d7bee746cea021eee5.jpg" width="50px">
+        <span class="ac">Pizza Plaza</span>
+        <a class="t" href="#FeedBack">FeedBack</a>
+        <a class="t" href="#About Us">About Us</a>
+        <a class="t" href="#Booking">Booking</a>
+        <a class="t" href="#Deals">Deals</a>
+        <a class="t" href="#Menu">Menu</a>
+    </nav>
+    <div class="a" id="Menu">
+          <div>
+            <h1>Starters</h1>
+            <div>
+                <img
+                class="center"
+                src="https://d4t7t8y8xqo0t.cloudfront.net/resized/1080X/restaurant%2F640615%2Fmenu%2Fmenu11567397973176.jpg"
+                alt=""
+              />
+            </div>
+            <h1>Main Course</h1>
+            <img
+              class="center"
+              src="https://d4t7t8y8xqo0t.cloudfront.net/resized/1080X/restaurant%2F640615%2Fmenu%2Fmenu11567397973176.jpg"
+              alt=""
+            />
+            <h1>Drinks And Beverages</h1>
+            <img
+              class="center"
+              src="https://d4t7t8y8xqo0t.cloudfront.net/resized/1080X/restaurant%2F640615%2Fmenu%2Fmenu11567397973176.jpg"
+              alt=""
+            />
+            <h1>Desserts</h1>
+            <img
+              class="center"
+              src="https://d4t7t8y8xqo0t.cloudfront.net/resized/1080X/restaurant%2F640615%2Fmenu%2Fmenu11567397973176.jpg"
+              alt=""
+            />
+          </div>
+    </div>
+    <div class="b" id="Deals">
+        <h1>Best Deals Of the day</h1>
+            <div class="boxes">
+              <div class="box1">
+                <img
+                  src="https://api.pizzahut.io/v1/content/en-in/in-1/images/deal/hut-treat-party-pack.ea9fb7638e5f27452f84d806f462548d.1.jpg"
+                  width="300px"
+                />
+                <p class="text1">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolorem deserunt expedita nulla explicabo natus vero cupiditate odit
+                  quia neque molestias labore quasi delectus nemo commodi, aut
+                  aspernatur ab voluptate!
+                </p>
+              </div>
+              <div class="box2">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9lVQLbXcefPvTx2liRTg_ar6blGTuhNRCayH-Ur_xT9WAAiHFi--SxVdXqHrenuxiUQY&usqp=CAU"
+                  width="100px"
+                />
+                <p class="text2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolorem deserunt expedita nulla explicabo natus vero cupiditate odit
+                  quia neque molestias labore quasi delectus nemo commodi, aut
+                  aspernatur ab voluptate!
+                </p>
+              </div>
+              <div class="box3">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFQF1JAUljwplllqsTl3FRZToL39ZwdUxOP2DHp0ehr1XXtCkXJjDfNWjQWoG6QBXjxe0&usqp=CAU"
+                  width="100px"
+                />
+                <p class="text3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolorem deserunt expedita nulla explicabo natus vero cupiditate odit
+                  quia neque molestias labore quasi delectus nemo commodi, aut
+                  aspernatur ab voluptate!
+                </p>
+              </div>
+              <div class="box4">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1YnwxxyswrsHRoSME0r2FJUCxeThnfO_eoLmnvGgWqBVWt_XYetmVGXa_jZY4o5YEIVw&usqp=CAU"
+                  width="300px"
+                />
+                <p class="text4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolorem deserunt expedita nulla explicabo natus vero cupiditate odit
+                  quia neque molestias labore quasi delectus nemo commodi, aut
+                  aspernatur ab voluptate!
+                </p>
+              </div>
+              <div class="box5">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNBXKTskGhSv4att9Dw8Nagi82cU3vfVJqmRVmuOlf004qO1QzD3tuhuShRv1lNjPcOI&usqp=CAU"
+                  width="300px"
+                />
+                <p class="text5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolorem deserunt expedita nulla explicabo natus vero cupiditate odit
+                  quia neque molestias labore quasi delectus nemo commodi, aut
+                  aspernatur ab voluptate!
+                </p>
+              </div>
+            </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="Booking"><br>
+        <h1>Booking</h1>
+        <form class="s">
+            <h2>Online Booking</h2>
+            <hr color="black" />
+            <p>
+              Dear Customer,<br />
+              Complete the following details to reserve a table at our beautiful
+              restaurant.
+            </p>
+            <span>❐ Name:&nbsp;</span>
+            <textarea name="text" id="text" cols="80" rows="1"></textarea>
+            <br /><br />
+            <span>❐ No. of guest:&nbsp;</span>
+            <textarea name="text" id="text" cols="60" rows="1"></textarea>
+            <br /><br />
+            <span>❐ Date:&nbsp;</span>
+            <input type="date" />
+            <br /><br />
+            <span>❐ Any Intructions:</span>
+            <br />
+            <textarea
+              name="text"
+              autocomplete="on"
+              id="text"
+              cols="97"
+              rows="5"
+            ></textarea>
+            <br /><br />
+            <button>Book</button>
+          </form>
+        </div> 
+    </div>
+    <div id="About Us">
+        <h1 >About Us</h1>
+        <form class="s1">
+            <div class="w">
+              <h2>Contact Us</h2>
+              <hr color="black" />
+              <div>
+                Dear Customer,
+                <h4>Need Help?</h4>
+                Your enquiry will be answered as soon as possible.
+              </div>
+              <span>❐ Name:&nbsp;</span>
+              <textarea name="text" id="text" cols="59" rows="1"></textarea>
+              <br /><br />
+              <span>❐ Mobile No.:&nbsp;</span>
+              <textarea name="text" id="text" cols="53" rows="1"></textarea>
+              <br /><br />
+              <span>❐ Comments/Questions:</span>
+              <br />
+              <textarea
+                name="text"
+                autocomplete="on"
+                id="text"
+                cols="70"
+                rows="5"
+              ></textarea>
+              <br /><br />
+              <span>Call Us </span>
+              <div 
+                display = "flex"
+                float ="left "
+                margin="10px"
+              >
+                <button >91+ 8318467xxx</button>
+                
+                <button >91+ 9956775xxx</button>
+              </div>
+
+            </div>
+            <img
+              class="u"
+              src="https://st4.depositphotos.com/23990904/30489/v/950/depositphotos_304892880-stock-illustration-busy-woman-freelancer-remotely-working.jpg?forcejpeg=true"
+              width="400px"
+              alt=""
+            />
+          </form>
+          <form class="s2">
+            <div>
+              <h2>Owner</h2>
+              <hr color="black" />
+              <div class="l">
+                <img
+                  class="d"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS78NndbZiK_0eG0HQCpI3zqFvdKfpkJCKSb3dcdpdSofQuOwtucAgSIH9LujQgU-xY7U&usqp=CAU"
+                />
+                <img
+                  class="d"
+                  src="https://cdn-icons-png.flaticon.com/512/219/219990.png"
+                  alt=""
+                />
+              </div>
+              <div class="it">
+                <span>Vijay Srivastava<br />(Rajajipuram)</span>
+                <span>Shikha Srivastava<br />(Hind Nagar)</span>
+              </div>
+            </div>
+          </form>
+      
+          <form class="s1">
+            <div>
+              <h2>About Us</h2>
+              <hr color="black" />
+              <p>
+                PIZZA PLAZA introduced fresh and a innovative approach to pizza by
+                offering pizza lovers over 20 different delicious toppings that are
+                richer and more sumptuous than those of our competitors, as well as a
+                selection of great tasting cheese blends and inviting appetizers to
+                enhance the total pizza experience. Our ingredients matter. Whether
+                it's our signature sauce, toppings, our original fresh dough, or even
+                the box itself, we invest in our ingredients to ensure that we always
+                give you the finest quality pizza. The most essential ingredient for
+                great tasting pizzas and pastas is the highest quality cheese. At
+                Pizza Plaza, our superb blends of mozzarella and cheddar cheese are
+                made by using 100% pure milk. At PIZZA PLAZA, we don't just make
+                pizza. We make people happy.
+              </p>
+            </div>
+            <img
+              class="ut"
+              src="https://www.essentialhome.eu/inspirations/wp-content/uploads/2020/08/Check-Decorazionis-Unique-Restaurant-Design-That-Is-All-About-Embracing-The-Classic-Blue-Shades-capa-740x560.jpg"
+              width="500px"
+              alt=""
+            />
+          </form>
+          <div class="branch">
+            <h2>Branches</h2>
+            <hr color="whitesmoke" />
+            <l class="it">
+              <ul>
+                ● Rajajipuram
+              </ul>
+              <ul>
+                ● Hind Nagar
+              </ul>
+            </l>
+    </div>
+    <div id="FeedBack">
+        <h1 >FeedBack</h1>
+        <form class="s">
+            <h2>Feedback Form</h2>
+            <hr color="black" />
+            <p>
+              Dear Customer,<br />
+              Thank you for visiting our restaurant. We would like to know how we
+              performed. Please spare some moments to give us your valuable feedback
+              as it will help us in improving our service.
+            </p>
+            <h4>Please rate your experience for the following parameters</h4>
+            <span>❐ Quality Of Food&nbsp;------------</span>
+            <input type="radio" /><label>Needs Improvement &nbsp;</label>
+            <input type="radio" /><label>Average &nbsp;</label>
+            <input type="radio" /><label>Good &nbsp;</label>
+            <input type="radio" /><label>Excellent &nbsp;</label>
+            <br />
+            <span>❐ Variety In Menu&nbsp;------------</span>
+            <input type="radio" /><label>Needs Improvement &nbsp;</label>
+            <input type="radio" /><label>Average &nbsp;</label>
+            <input type="radio" /><label>Good &nbsp;</label>
+            <input type="radio" /><label>Excellent &nbsp;</label>
+            <br />
+            <span>❐ Service&nbsp;-----------------------</span>
+            <input type="radio" /><label>Needs Improvement &nbsp;</label>
+            <input type="radio" /><label>Average &nbsp;</label>
+            <input type="radio" /><label>Good &nbsp;</label>
+            <input type="radio" /><label>Excellent &nbsp;</label>
+            <br />
+            <span>❐ Cleanliness/Atmosphere&nbsp;---</span>
+            <input type="radio" /><label>Needs Improvement &nbsp;</label>
+            <input type="radio" /><label>Average &nbsp;</label>
+            <input type="radio" /><label>Good &nbsp;</label>
+            <input type="radio" /><label>Excellent &nbsp;</label>
+            <br />
+            <span>★ Any Suggestions ★</span>
+            <br />
+            <textarea name="text" id="text" cols="97" rows="10"></textarea>
+            <br /><br />
+            <button>Submit</button>
+          </form>
+    </div>
+</body>
+</html>
